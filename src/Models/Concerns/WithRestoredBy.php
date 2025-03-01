@@ -4,6 +4,7 @@ namespace JeffersonGoncalves\CreatedBy\Models\Concerns;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Auth\User;
+use JeffersonGoncalves\CreatedBy\Models\Scope\RestoredByScope;
 
 /**
  * @mixin \Illuminate\Database\Eloquent\Model
@@ -13,6 +14,7 @@ trait WithRestoredBy
 {
     public static function bootWithRestoredBy(): void
     {
+        static::addGlobalScope(new RestoredByScope());
         static::restoring(static function ($model) {
             $model->restored_by = auth()->id();
         });
