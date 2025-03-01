@@ -28,7 +28,7 @@ class TestModel extends Model
     use SoftDeletes;
     use WithCreatedBy;
     use WithDeletedBy;
-    use WithUpdatedBy;
-    use WithRestoredBy;
     use WithRestoredAt;
+    use WithRestoredBy;
+    use WithUpdatedBy;
 }

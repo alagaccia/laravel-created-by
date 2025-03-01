@@ -2,9 +2,6 @@
 
 namespace JeffersonGoncalves\CreatedBy\Models\Concerns;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Foundation\Auth\User;
-
 /**
  * @mixin \Illuminate\Database\Eloquent\Model
  * @mixin \Illuminate\Database\Eloquent\SoftDeletes

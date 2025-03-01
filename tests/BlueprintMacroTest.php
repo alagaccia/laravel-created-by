@@ -32,7 +32,6 @@ it('can extend the blueprint for migrations', function ($functionName, $columnNa
         ]);
 })->with($fields);
 
-
 it('can extend the blueprint for migrations - restoredAt', function () {
     app()->register(CreatedByServiceProvider::class);
     if (app()->version() >= '12.0') {
