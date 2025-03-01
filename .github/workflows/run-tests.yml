@@ -15,7 +15,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         php: [8.2, 8.3]
         laravel: [^11.0, ^12.0]
-        testbench: [^9.0, ^9.0]
+        testbench: [^9.0, ^10.0]
         carbon: [^2.63, ^3.8]
         stability: [prefer-lowest, prefer-stable]
 
