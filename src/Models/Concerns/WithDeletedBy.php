@@ -13,7 +13,7 @@ trait WithDeletedBy
 {
     public static function bootWithDeletedBy(): void
     {
-        static::addGlobalScope(new DeletedByScope());
+        static::addGlobalScope(new DeletedByScope);
         static::deleting(static function ($model) {
             $model->deleted_by = auth()->id();
         });

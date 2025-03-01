@@ -8,10 +8,7 @@ use Illuminate\Database\Eloquent\Scope;
 
 class CreatedByScope implements Scope
 {
-    public function apply(Builder $builder, Model $model)
-    {
-
-    }
+    public function apply(Builder $builder, Model $model) {}
 
     public function extend(Builder $builder): void
     {

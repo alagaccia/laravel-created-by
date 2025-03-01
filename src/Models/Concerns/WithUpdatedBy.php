@@ -13,7 +13,7 @@ trait WithUpdatedBy
 {
     public static function bootWithUpdatedBy(): void
     {
-        static::addGlobalScope(new UpdatedByScope());
+        static::addGlobalScope(new UpdatedByScope);
         static::creating(static function ($model) {
             $model->updated_by = auth()->id();
         });

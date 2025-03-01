@@ -13,7 +13,7 @@ trait WithCreatedBy
 {
     public static function bootWithCreatedBy(): void
     {
-        static::addGlobalScope(new CreatedByScope());
+        static::addGlobalScope(new CreatedByScope);
         static::creating(static function ($model) {
             $model->created_by = auth()->id();
         });

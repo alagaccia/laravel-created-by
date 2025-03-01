@@ -14,7 +14,7 @@ trait WithRestoredBy
 {
     public static function bootWithRestoredBy(): void
     {
-        static::addGlobalScope(new RestoredByScope());
+        static::addGlobalScope(new RestoredByScope);
         static::restoring(static function ($model) {
             $model->restored_by = auth()->id();
         });
