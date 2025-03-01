@@ -15,7 +15,9 @@ jobs:
         os: [ubuntu-latest]
         php: [8.2, 8.3]
         laravel: [^11.0, ^12.0]
-        stability: [prefer-lowest, prefer-stable]
+        testbench: [^9.0, ^10.0]
+        carbon: [^2.63, ^3.8]
+        stability: [prefer-stable]
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
