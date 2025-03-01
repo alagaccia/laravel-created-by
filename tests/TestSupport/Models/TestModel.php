@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use JeffersonGoncalves\CreatedBy\Models\Concerns\WithCreatedBy;
 use JeffersonGoncalves\CreatedBy\Models\Concerns\WithDeletedBy;
+use JeffersonGoncalves\CreatedBy\Models\Concerns\WithRestoredAt;
+use JeffersonGoncalves\CreatedBy\Models\Concerns\WithRestoredBy;
 use JeffersonGoncalves\CreatedBy\Models\Concerns\WithUpdatedBy;
 
 class TestModel extends Model
@@ -27,4 +29,6 @@ class TestModel extends Model
     use WithDeletedBy;
     use WithUpdatedBy;
     use SoftDeletes;
+    use WithRestoredBy;
+    use WithRestoredAt;
 }

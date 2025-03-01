@@ -37,6 +37,18 @@ class CreatedByServiceProvider extends PackageServiceProvider
                     ->default(null);
             });
         }
+        if (! Blueprint::hasMacro('restoredBy')) {
+            Blueprint::macro('restoredBy', function () {
+                $this->foreignIdFor(config('auth.providers.users.model', User::class), 'restored_by')
+                    ->nullable()
+                    ->default(null);
+            });
+        }
+        if (! Blueprint::hasMacro('restoredAt')) {
+            Blueprint::macro('restoredAt', function () {
+                $this->timestamp('restored_at')->nullable()->default(null);
+            });
+        }
         if (! Blueprint::hasMacro('dropCreatedBy')) {
             Blueprint::macro('dropCreatedBy', function () {
                 $this->dropColumn('created_by');
@@ -50,6 +62,16 @@ class CreatedByServiceProvider extends PackageServiceProvider
         if (! Blueprint::hasMacro('dropDeletedBy')) {
             Blueprint::macro('dropDeletedBy', function () {
                 $this->dropColumn('deleted_by');
+            });
+        }
+        if (! Blueprint::hasMacro('dropRestoredBy')) {
+            Blueprint::macro('dropRestoredBy', function () {
+                $this->dropColumn('restored_by');
+            });
+        }
+        if (! Blueprint::hasMacro('dropRestoredAt')) {
+            Blueprint::macro('dropRestoredAt', function () {
+                $this->dropColumn('restored_at');
             });
         }
     }

@@ -8,4 +8,5 @@ test('check method is called', function (string $method) {
     'createdBy',
     'deletedBy',
     'updatedBy',
+    'restoredBy',
 ]);
