@@ -23,8 +23,8 @@ class TestModel extends Model
     public $table = 'test_models';
 
     use HasFactory;
+    use SoftDeletes;
     use WithCreatedBy;
     use WithDeletedBy;
     use WithUpdatedBy;
-    use SoftDeletes;
 }
