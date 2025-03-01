@@ -37,11 +37,6 @@ class CreatedByServiceProvider extends PackageServiceProvider
                     ->default(null);
             });
         }
-        if (!Blueprint::hasMacro('restoredAt')) {
-            Blueprint::macro('restoredAt', function () {
-                $this->timestamp('restored_at')->nullable()->default(null);
-            });
-        }
         if (! Blueprint::hasMacro('dropCreatedBy')) {
             Blueprint::macro('dropCreatedBy', function () {
                 $this->dropColumn('created_by');
