@@ -24,6 +24,8 @@ Schema::create('posts', function (Blueprint $table) {
     $table->createdBy();
     $table->updatedBy();
     $table->deletedBy();
+    $table->restoredBy();
+    $table->restoredAt();
     $table->softDeletes();
 });
 ```
@@ -37,12 +39,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use JeffersonGoncalves\CreatedBy\WithCreatedBy;
+use JeffersonGoncalves\CreatedBy\WithUpdatedBy;
+use JeffersonGoncalves\CreatedBy\WithDeletedBy;
+use JeffersonGoncalves\CreatedBy\WithRestoredBy;
+use JeffersonGoncalves\CreatedBy\WithRestoredAt;
 
 class Post extends Model
 {
     use WithCreatedBy;
     use WithUpdatedBy;
     use WithDeletedBy;
+    use WithRestoredBy;
+    use WithRestoredAt;
 }
 ```
 
