@@ -38,6 +38,7 @@ Your model add traits:
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use JeffersonGoncalves\CreatedBy\WithCreatedBy;
 use JeffersonGoncalves\CreatedBy\WithUpdatedBy;
 use JeffersonGoncalves\CreatedBy\WithDeletedBy;
@@ -46,6 +47,7 @@ use JeffersonGoncalves\CreatedBy\WithRestoredAt;
 
 class Post extends Model
 {
+    use SoftDeletes;
     use WithCreatedBy;
     use WithUpdatedBy;
     use WithDeletedBy;
