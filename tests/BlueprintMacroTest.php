@@ -13,7 +13,7 @@ $fields = [
 
 it('can extend the blueprint for migrations', function ($functionName, $columnName) {
     app()->register(CreatedByServiceProvider::class);
-    $blueprint = new Blueprint(DB::connection(), 'test');
+    $blueprint = new Blueprint(DB::connection(), 'users');
     $blueprint->$functionName();
     expect($blueprint->getAddedColumns())->toHaveCount(1)
         ->and($blueprint->getAddedColumns()[0]->toArray())->toEqual([
@@ -30,7 +30,7 @@ it('can extend the blueprint for migrations', function ($functionName, $columnNa
 
 it('can extend the blueprint for migrations - restoredAt', function () {
     app()->register(CreatedByServiceProvider::class);
-    $blueprint = new Blueprint(DB::connection(), 'test');
+    $blueprint = new Blueprint(DB::connection(), 'users');
     $blueprint->restoredAt();
     expect($blueprint->getAddedColumns())->toHaveCount(1)
         ->and($blueprint->getAddedColumns()[0]->toArray())->toEqual([
