@@ -21,8 +21,8 @@ it('can extend the blueprint for migrations', function ($functionName, $columnNa
             'name' => $columnName,
             'autoIncrement' => false,
             'unsigned' => true,
-            "table" => $blueprint->getTable(),
-            "referencesModelColumn" => "id",
+            'table' => $blueprint->getTable(),
+            'referencesModelColumn' => 'id',
             'nullable' => true,
             'default' => null,
         ]);

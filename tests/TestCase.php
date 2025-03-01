@@ -2,8 +2,8 @@
 
 namespace JeffersonGoncalves\CreatedBy\Tests;
 
-use JeffersonGoncalves\CreatedBy\CreatedByServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use JeffersonGoncalves\CreatedBy\CreatedByServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
