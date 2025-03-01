@@ -12,7 +12,11 @@ $fields = [
 
 it('can extend the blueprint for migrations', function ($functionName, $columnName) {
     app()->register(CreatedByServiceProvider::class);
-    $blueprint = new Blueprint(DB::connection(), 'users');
+    if (app()->version() >= '12.0') {
+        $blueprint = new Blueprint(DB::connection(), 'users');
+    } else {
+        $blueprint = new Blueprint('users');
+    }
     $blueprint->$functionName();
     expect($blueprint->getAddedColumns())->toHaveCount(1)
         ->and($blueprint->getAddedColumns()[0]->toArray())->toEqual([
