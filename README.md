@@ -17,8 +17,34 @@ composer require jeffersongoncalves/laravel-created-by
 ```
 
 ## Usage
-Add in Model
+Add in columns our table.
 
+```php
+Schema::create('posts', function (Blueprint $table) {
+    $table->createdBy();
+    $table->updatedBy();
+    $table->deletedBy();
+    $table->softDeletes();
+});
+```
+
+Your model add traits:
+
+```php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use JeffersonGoncalves\CreatedBy\WithCreatedBy;
+
+class Post extends Model
+{
+    use WithCreatedBy;
+    use WithUpdatedBy;
+    use WithDeletedBy;
+}
+```
 
 ## Testing
 
