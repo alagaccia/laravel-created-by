@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Laravel Created By](./art/jeffersongoncalves-laravel-created-by.png)
+![Laravel Created By](https://raw.githubusercontent.com/jeffersongoncalves/laravel-created-by/master/art/jeffersongoncalves-laravel-created-by.png)
 
 </div>
 
