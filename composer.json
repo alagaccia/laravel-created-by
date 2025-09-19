@@ -62,7 +62,5 @@
                 "Alagaccia\\CreatedBy\\CreatedByServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev-master",
-    "prefer-stable": true
+    }
 }
