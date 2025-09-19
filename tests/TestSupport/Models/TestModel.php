@@ -1,15 +1,15 @@
 <?php
 
-namespace JeffersonGoncalves\CreatedBy\Tests\TestSupport\Models;
+namespace Alagaccia\CreatedBy\Tests\TestSupport\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use JeffersonGoncalves\CreatedBy\Models\Concerns\WithCreatedBy;
-use JeffersonGoncalves\CreatedBy\Models\Concerns\WithDeletedBy;
-use JeffersonGoncalves\CreatedBy\Models\Concerns\WithRestoredAt;
-use JeffersonGoncalves\CreatedBy\Models\Concerns\WithRestoredBy;
-use JeffersonGoncalves\CreatedBy\Models\Concerns\WithUpdatedBy;
+use Alagaccia\CreatedBy\Models\Concerns\WithCreatedBy;
+use Alagaccia\CreatedBy\Models\Concerns\WithDeletedBy;
+use Alagaccia\CreatedBy\Models\Concerns\WithRestoredAt;
+use Alagaccia\CreatedBy\Models\Concerns\WithRestoredBy;
+use Alagaccia\CreatedBy\Models\Concerns\WithUpdatedBy;
 
 class TestModel extends Model
 {

@@ -22,6 +22,7 @@ composer require jeffersongoncalves/laravel-created-by
 ```
 
 ## Usage
+
 Add in columns our table.
 
 ```php
@@ -44,11 +45,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use JeffersonGoncalves\CreatedBy\WithCreatedBy;
-use JeffersonGoncalves\CreatedBy\WithUpdatedBy;
-use JeffersonGoncalves\CreatedBy\WithDeletedBy;
-use JeffersonGoncalves\CreatedBy\WithRestoredBy;
-use JeffersonGoncalves\CreatedBy\WithRestoredAt;
+use Alagaccia\CreatedBy\WithCreatedBy;
+use Alagaccia\CreatedBy\WithUpdatedBy;
+use Alagaccia\CreatedBy\WithDeletedBy;
+use Alagaccia\CreatedBy\WithRestoredBy;
+use Alagaccia\CreatedBy\WithRestoredAt;
 
 class Post extends Model
 {
@@ -81,8 +82,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Jèfferson Gonçalves](https://github.com/jeffersongoncalves)
-- [All Contributors](../../contributors)
+-   [Jèfferson Gonçalves](https://github.com/jeffersongoncalves)
+-   [All Contributors](../../contributors)
 
 ## License
 

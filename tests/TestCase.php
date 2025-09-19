@@ -1,9 +1,9 @@
 <?php
 
-namespace JeffersonGoncalves\CreatedBy\Tests;
+namespace Alagaccia\CreatedBy\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use JeffersonGoncalves\CreatedBy\CreatedByServiceProvider;
+use Alagaccia\CreatedBy\CreatedByServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'JeffersonGoncalves\\CreatedBy\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn(string $modelName) => 'Alagaccia\\CreatedBy\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

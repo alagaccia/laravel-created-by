@@ -1,10 +1,10 @@
 <?php
 
-namespace JeffersonGoncalves\CreatedBy\Models\Concerns;
+namespace Alagaccia\CreatedBy\Models\Concerns;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Auth\User;
-use JeffersonGoncalves\CreatedBy\Models\Scope\DeletedByScope;
+use Alagaccia\CreatedBy\Models\Scope\DeletedByScope;
 
 /**
  * @mixin \Illuminate\Database\Eloquent\Model

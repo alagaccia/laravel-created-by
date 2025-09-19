@@ -1,6 +1,6 @@
 <?php
 
-namespace JeffersonGoncalves\CreatedBy\Models\Scope;
+namespace Alagaccia\CreatedBy\Models\Scope;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
-use JeffersonGoncalves\CreatedBy\CreatedByServiceProvider;
+use Alagaccia\CreatedBy\CreatedByServiceProvider;
 
 $fields = [
     ['createdBy', 'created_by'],

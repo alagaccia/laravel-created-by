@@ -1,6 +1,6 @@
 <?php
 
-namespace JeffersonGoncalves\CreatedBy\Models\Concerns;
+namespace Alagaccia\CreatedBy\Models\Concerns;
 
 /**
  * @mixin \Illuminate\Database\Eloquent\Model

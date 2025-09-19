@@ -1,17 +1,23 @@
 {
-    "name": "jeffersongoncalves/laravel-created-by",
+    "name": "alagaccia/laravel-created-by",
     "description": "This Laravel package automatically logs the currently logged-in user's ID to the `created_by`, `updated_by`, `deleted_by`, and `restored_by` fields of your Eloquent models. It also automatically timestamps the `restored_at` field when a model is restored. This simplifies the tracking of data modifications and provides valuable auditing capabilities. The package is easy to install and configure, seamlessly integrating with your existing Laravel application.",
     "keywords": [
         "jeffersongoncalves",
+        "alagaccia",
         "laravel",
         "laravel-created-by"
     ],
-    "homepage": "https://github.com/jeffersongoncalves/laravel-created-by",
+    "homepage": "https://github.com/alagaccia/laravel-created-by",
     "license": "MIT",
     "authors": [
         {
             "name": "Jefferson Gonçalves",
             "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Andrea Lagaccia",
+            "email": "a.lagaccia@gmail.com",
             "role": "Developer"
         }
     ],
@@ -28,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "JeffersonGoncalves\\CreatedBy\\": "src"
+            "Alagaccia\\CreatedBy\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JeffersonGoncalves\\CreatedBy\\Tests\\": "tests"
+            "Alagaccia\\CreatedBy\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -53,7 +59,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JeffersonGoncalves\\CreatedBy\\CreatedByServiceProvider"
+                "Alagaccia\\CreatedBy\\CreatedByServiceProvider"
             ]
         }
     },
