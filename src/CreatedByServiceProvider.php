@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreaLagaccia\CreatedBy;
+namespace ALagaccia\CreatedBy;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Auth\User;
